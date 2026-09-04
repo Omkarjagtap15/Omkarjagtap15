@@ -76,7 +76,9 @@ I am a **Full-Stack Software Engineer** passionate about building high-throughpu
 
 - **Document Parsing & Extraction**: Built asynchronous document extraction pipelines parsing large PDF files (`pdf-parse`) and generating structured summaries via OpenAI.
 - **Scalable Architecture**: Integrated Neon Serverless PostgreSQL with Clerk authentication and Cloudinary image pipelines under Express 5.
-- *Tech Stack*: `React`, `Node.js / Express 5`, `OpenAI API`, `Neon PostgreSQL`, `Cloudinary`, `Clerk Auth`.
+- **Streaming AI Pipelines**: Designed real-time token streaming endpoints for interactive text completion, prompt templates, and code assistance.
+- **Secure File Storage**: Engineered secure multipart/form-data upload flows using Multer with Cloudinary CDN media optimization.
+- *Tech Stack*: `React`, `Node.js / Express 5`, `OpenAI API`, `Neon PostgreSQL`, `Cloudinary`, `Clerk Auth`, `Multer`.
 
 ---
 
@@ -86,7 +88,10 @@ I am a **Full-Stack Software Engineer** passionate about building high-throughpu
 > 💻 [**Source Code**](https://github.com/Omkarjagtap15/InterviewMentorAI)
 
 - **Real-Time Evaluation**: Leverages prompt-engineered LLM chains to analyze candidate answers against technical rubrics and output targeted, constructive critiques.
-- *Tech Stack*: `TypeScript`, `Next.js`, `Tailwind CSS`, `Generative AI`.
+- **Dynamic Scoring Matrix**: Assesses code complexity, algorithmic efficiency, system design tradeoffs, and communication clarity.
+- **Adaptive Questioning**: Synthesizes follow-up probing questions dynamically based on previous responses to simulate authentic technical screening rounds.
+- **Type-Safe Full-Stack**: Built with end-to-end TypeScript, Next.js, and Tailwind CSS for rapid state updates and zero-latency user feedback.
+- *Tech Stack*: `TypeScript`, `Next.js`, `Tailwind CSS`, `Generative AI`, `LLM Prompt Engineering`.
 
 ---
 
@@ -95,7 +100,11 @@ I am a **Full-Stack Software Engineer** passionate about building high-throughpu
 >
 > 💻 [**Source Code**](https://github.com/Omkarjagtap15/Cafeecafii)
 
-- *Tech Stack*: `Next.js`, `TypeScript`, `Tailwind CSS`.
+- **Modern Architecture**: Developed using Next.js and TypeScript, leveraging modern component patterns and server-side performance optimizations.
+- **Tailored Design System**: Crafted a customized dark-mode aesthetic with fluid typography, responsive grid layouts, and smooth micro-interactions.
+- **Interactive State**: Implemented seamless client-side state for menu exploration, category filtering, and item selection.
+- **Web Performance**: Optimized asset delivery, layout stability, and SEO metadata to achieve top-tier Lighthouse scores across mobile and desktop.
+- *Tech Stack*: `Next.js`, `TypeScript`, `Tailwind CSS`, `Lucide Icons`.
 
 ---
 
