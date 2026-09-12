@@ -9,6 +9,7 @@
   <a href="https://github.com/Omkarjagtap15"><img src="https://img.shields.io/badge/GitHub-Omkarjagtap15-181717?style=for-the-badge&logo=github" alt="GitHub" /></a>
   <a href="https://linkedin.com/in/omkar-jagtap-"><img src="https://img.shields.io/badge/LinkedIn-Omkar%20Jagtap-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="https://leetcode.com"><img src="https://img.shields.io/badge/LeetCode-Knight%20(1874)-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode" /></a>
+  <a href="https://github.com/Omkarjagtap15?tab=achievements"><img src="https://img.shields.io/badge/Achievements-Quickdraw_%E2%80%A2_YOLO_%E2%80%A2_Pull_Shark-238636?style=for-the-badge&logo=github" alt="GitHub Achievements" /></a>
 </p>
 
 </div>
@@ -38,6 +39,29 @@ I am a **Full-Stack Software Engineer** and an **Integrated M.Sc. student in Mat
 | 🚀 **Google Big Code Challenge (2026)** | Advanced to **Round 3**, ranked in the **Top 1,500 nationally** |
 | 🎖️ **G.P. Birla Scholarship** | Awarded **3 times (2022, 2024, 2025)** out of 1,000+ candidates for academic excellence |
 | 🎓 **Academic Merit** | **8.54 / 10.0 CGPA** in Integrated M.Sc. Mathematics and Computing at **BIT Mesra** |
+| 🏅 **GitHub Achievements** | **Quickdraw 🤠 • YOLO 💖 • Pull Shark 🦈 • Pair Extraordinaire 👯 • Galaxy Brain 🧠** ([Showcase](https://github.com/Omkarjagtap15?tab=achievements)) |
+
+</div>
+
+---
+
+## 🎖️ GitHub Achievements & Badges Showcase
+
+<div align="center">
+
+| Badge | Achievement | Description | Status |
+|:---:|:---|:---|:---:|
+| 🤠 | **Quickdraw** | Closed an issue / PR within 5 minutes of opening | **Unlocked & Live** ✅ |
+| 💖 | **YOLO** | Merged a pull request directly without code review | **Unlocked & Live** ✅ |
+| 🦈 | **Pull Shark** | Opened & merged multiple pull requests (4 PRs merged) | **Qualified** 🚀 |
+| 👯 | **Pair Extraordinaire** | Co-authored commits on merged pull requests | **Qualified** 🚀 |
+| 🧠 | **Galaxy Brain** | Answered discussions with accepted answers in Q&A | **Qualified** 🚀 |
+
+<p align="center">
+  <a href="https://github.com/Omkarjagtap15?tab=achievements">
+    <img src="https://img.shields.io/badge/View_Official_Achievements_Showcase-%E2%86%92-238636?style=for-the-badge&logo=github" alt="Achievements Showcase" />
+  </a>
+</p>
 
 </div>
 
@@ -139,10 +163,25 @@ I am a **Full-Stack Software Engineer** and an **Integrated M.Sc. student in Mat
 
 ---
 
+### 🌱 [Greenery — Git Contribution Timeline & Workflow Automation Engine](https://github.com/Omkarjagtap15/greenery)
+> **Automated git workflow engine, chronological contribution timeline architect, and GitHub achievement automation suite.**
+>
+> 💻 [**Source Code**](https://github.com/Omkarjagtap15/greenery)
+>
+> - **Chronological History Synthesis**: Configurable deterministic commit generation across custom date ranges with organic weekly rhythms and high-output sprint cadence.
+> - **Wave Visualizer**: Real-time contribution graph rendering with dynamic wave-filling animation for terminal CLI and web previews.
+> - **Achievement Pipeline**: Automated validation and execution of GitHub achievement triggers (YOLO, Quickdraw, Pull Shark, Pair Extraordinaire).
+> - *Tech Stack*: `JavaScript`, `Node.js`, `Git Automation`, `ANSI Chalk`, `Canvas / SVG`.
+
+---
+
 ## 📈 GitHub Activity & Consistency
 
 <div align="center">
 
+<a href="https://github.com/Omkarjagtap15">
+  <img src="https://github-readme-stats.vercel.app/api?username=Omkarjagtap15&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Omkar's GitHub Stats" />
+</a>
 <a href="https://github.com/Omkarjagtap15">
   <img src="https://streak-stats.demolab.com/?user=Omkarjagtap15&theme=tokyonight&hide_border=true" alt="Omkar's GitHub Streak" />
 </a>
