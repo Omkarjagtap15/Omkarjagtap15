@@ -180,9 +180,6 @@ I am a **Full-Stack Software Engineer** and an **Integrated M.Sc. student in Mat
 <div align="center">
 
 <a href="https://github.com/Omkarjagtap15">
-  <img src="https://github-readme-stats.vercel.app/api?username=Omkarjagtap15&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Omkar's GitHub Stats" />
-</a>
-<a href="https://github.com/Omkarjagtap15">
   <img src="https://streak-stats.demolab.com/?user=Omkarjagtap15&theme=tokyonight&hide_border=true" alt="Omkar's GitHub Streak" />
 </a>
 
