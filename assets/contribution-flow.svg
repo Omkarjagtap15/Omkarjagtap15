@@ -1,0 +1,475 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 155" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060a14" />
+      <stop offset="50%" stop-color="#091024" />
+      <stop offset="100%" stop-color="#070c1a" />
+    </linearGradient>
+
+    <!-- Wave Stroke Gradients -->
+    <linearGradient id="wave1Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.05" />
+      <stop offset="25%" stop-color="#38bdf8" stop-opacity="0.35" />
+      <stop offset="60%" stop-color="#60a5fa" stop-opacity="0.45" />
+      <stop offset="90%" stop-color="#38bdf8" stop-opacity="0.28" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.05" />
+    </linearGradient>
+
+    <linearGradient id="wave2Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.03" />
+      <stop offset="35%" stop-color="#60a5fa" stop-opacity="0.22" />
+      <stop offset="75%" stop-color="#38bdf8" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.04" />
+    </linearGradient>
+
+    <!-- Subtle Wave Area Underfill -->
+    <linearGradient id="waveAreaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Cell Glow for Active Hotspots -->
+    <filter id="cellGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="1.6" flood-color="#39d353" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <style>
+    .cal-label { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 9.5px; font-weight: 600; fill: #64748b; }
+    .legend-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 9.5px; font-weight: 500; fill: #64748b; }
+    .meta-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 10px; font-weight: 500; fill: #94a3b8; }
+  </style>
+
+  <!-- Container Box -->
+  <rect width="880" height="155" rx="12" fill="url(#bgGrad)" stroke="#1e293b" stroke-width="1.2" />
+
+  <!-- Flowing Wave Layer 1 (Area fill underneath calendar) -->
+  <path d="M 40,105 
+           C 170,82 280,118 420,92 
+           C 560,68 680,108 840,88 
+           L 840,140 L 40,140 Z" 
+        fill="url(#waveAreaGrad)" />
+
+  <!-- Flowing Wave Layer 2 (Primary rhythmic curve) -->
+  <path d="M 40,105 
+           C 170,82 280,118 420,92 
+           C 560,68 680,108 840,88" 
+        fill="none" stroke="url(#wave1Grad)" stroke-width="1.6" stroke-linecap="round" />
+
+  <!-- Flowing Wave Layer 3 (Secondary harmonic curve) -->
+  <path d="M 40,118 
+           C 190,126 310,94 450,112 
+           C 590,128 710,96 840,105" 
+        fill="none" stroke="url(#wave2Grad)" stroke-width="1.2" stroke-linecap="round" />
+
+  <!-- Month Labels -->
+  <g>
+    <text x="104.0" y="28" class="cal-label">Sep</text>
+    <text x="141.5" y="28" class="cal-label">Oct</text>
+    <text x="191.5" y="28" class="cal-label">Nov</text>
+    <text x="254.0" y="28" class="cal-label">Dec</text>
+    <text x="304.0" y="28" class="cal-label">Jan</text>
+    <text x="354.0" y="28" class="cal-label">Feb</text>
+    <text x="404.0" y="28" class="cal-label">Mar</text>
+    <text x="466.5" y="28" class="cal-label">Apr</text>
+    <text x="516.5" y="28" class="cal-label">May</text>
+    <text x="579.0" y="28" class="cal-label">Jun</text>
+    <text x="629.0" y="28" class="cal-label">Jul</text>
+    <text x="679.0" y="28" class="cal-label">Aug</text>
+  </g>
+
+  <!-- Weekday Labels -->
+  <g>
+    <text x="92" y="58.5" text-anchor="end" class="cal-label">Mon</text>
+    <text x="92" y="83.5" text-anchor="end" class="cal-label">Wed</text>
+    <text x="92" y="108.5" text-anchor="end" class="cal-label">Fri</text>
+  </g>
+
+  <!-- Real Contribution Grid -->
+  <g>
+    <rect x="104.0" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-09-14: Level 0</title></rect>
+    <rect x="116.5" y="38.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2025-09-21: Level 1</title></rect>
+    <rect x="129.0" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-09-28: Level 0</title></rect>
+    <rect x="141.5" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-10-05: Level 0</title></rect>
+    <rect x="154.0" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-10-12: Level 0</title></rect>
+    <rect x="166.5" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-10-19: Level 0</title></rect>
+    <rect x="179.0" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-10-26: Level 0</title></rect>
+    <rect x="191.5" y="38.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2025-11-02: Level 1</title></rect>
+    <rect x="204.0" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-11-09: Level 0</title></rect>
+    <rect x="216.5" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-11-16: Level 0</title></rect>
+    <rect x="229.0" y="38.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2025-11-23: Level 1</title></rect>
+    <rect x="241.5" y="38.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2025-11-30: Level 1</title></rect>
+    <rect x="254.0" y="38.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2025-12-07: Level 1</title></rect>
+    <rect x="266.5" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-12-14: Level 0</title></rect>
+    <rect x="279.0" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-12-21: Level 0</title></rect>
+    <rect x="291.5" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-12-28: Level 0</title></rect>
+    <rect x="304.0" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-01-04: Level 0</title></rect>
+    <rect x="316.5" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-01-11: Level 0</title></rect>
+    <rect x="329.0" y="38.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-01-18: Level 1</title></rect>
+    <rect x="341.5" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-01-25: Level 0</title></rect>
+    <rect x="354.0" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-02-01: Level 0</title></rect>
+    <rect x="366.5" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-02-08: Level 0</title></rect>
+    <rect x="379.0" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-02-15: Level 0</title></rect>
+    <rect x="391.5" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-02-22: Level 0</title></rect>
+    <rect x="404.0" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-03-01: Level 0</title></rect>
+    <rect x="416.5" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-03-08: Level 0</title></rect>
+    <rect x="429.0" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-03-15: Level 0</title></rect>
+    <rect x="441.5" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-03-22: Level 0</title></rect>
+    <rect x="454.0" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-03-29: Level 0</title></rect>
+    <rect x="466.5" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-04-05: Level 0</title></rect>
+    <rect x="479.0" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-04-12: Level 0</title></rect>
+    <rect x="491.5" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-04-19: Level 0</title></rect>
+    <rect x="504.0" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-04-26: Level 0</title></rect>
+    <rect x="516.5" y="38.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-05-03: Level 1</title></rect>
+    <rect x="529.0" y="38.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-05-10: Level 1</title></rect>
+    <rect x="541.5" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-05-17: Level 0</title></rect>
+    <rect x="554.0" y="38.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-05-24: Level 1</title></rect>
+    <rect x="566.5" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-05-31: Level 0</title></rect>
+    <rect x="579.0" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-06-07: Level 0</title></rect>
+    <rect x="591.5" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-06-14: Level 0</title></rect>
+    <rect x="604.0" y="38.0" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-06-21: Level 2</title></rect>
+    <rect x="616.5" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-06-28: Level 0</title></rect>
+    <rect x="629.0" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-07-05: Level 0</title></rect>
+    <rect x="641.5" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-07-12: Level 0</title></rect>
+    <rect x="654.0" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-07-19: Level 0</title></rect>
+    <rect x="666.5" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-07-26: Level 0</title></rect>
+    <rect x="679.0" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-08-02: Level 0</title></rect>
+    <rect x="691.5" y="38.0" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-08-09: Level 2</title></rect>
+    <rect x="704.0" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-08-16: Level 0</title></rect>
+    <rect x="716.5" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-08-23: Level 0</title></rect>
+    <rect x="729.0" y="38.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-08-30: Level 0</title></rect>
+    <rect x="741.5" y="38.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-09-06: Level 1</title></rect>
+    <rect x="754.0" y="38.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-09-13: Level 1</title></rect>
+    <rect x="104.0" y="50.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-09-15: Level 0</title></rect>
+    <rect x="116.5" y="50.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-09-22: Level 0</title></rect>
+    <rect x="129.0" y="50.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-09-29: Level 0</title></rect>
+    <rect x="141.5" y="50.5" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2025-10-06: Level 2</title></rect>
+    <rect x="154.0" y="50.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-10-13: Level 0</title></rect>
+    <rect x="166.5" y="50.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-10-20: Level 0</title></rect>
+    <rect x="179.0" y="50.5" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2025-10-27: Level 1</title></rect>
+    <rect x="191.5" y="50.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-11-03: Level 0</title></rect>
+    <rect x="204.0" y="50.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-11-10: Level 0</title></rect>
+    <rect x="216.5" y="50.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-11-17: Level 0</title></rect>
+    <rect x="229.0" y="50.5" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2025-11-24: Level 1</title></rect>
+    <rect x="241.5" y="50.5" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2025-12-01: Level 1</title></rect>
+    <rect x="254.0" y="50.5" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2025-12-08: Level 1</title></rect>
+    <rect x="266.5" y="50.5" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2025-12-15: Level 2</title></rect>
+    <rect x="279.0" y="50.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-12-22: Level 0</title></rect>
+    <rect x="291.5" y="50.5" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2025-12-29: Level 1</title></rect>
+    <rect x="304.0" y="50.5" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-01-05: Level 1</title></rect>
+    <rect x="316.5" y="50.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-01-12: Level 0</title></rect>
+    <rect x="329.0" y="50.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-01-19: Level 0</title></rect>
+    <rect x="341.5" y="50.5" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-01-26: Level 2</title></rect>
+    <rect x="354.0" y="50.5" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-02-02: Level 2</title></rect>
+    <rect x="366.5" y="50.5" width="10" height="10" rx="2" fill="#26a641" stroke="#2fc24d" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-02-09: Level 3</title></rect>
+    <rect x="379.0" y="50.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-02-16: Level 0</title></rect>
+    <rect x="391.5" y="50.5" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-02-23: Level 2</title></rect>
+    <rect x="404.0" y="50.5" width="10" height="10" rx="2" fill="#26a641" stroke="#2fc24d" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-03-02: Level 3</title></rect>
+    <rect x="416.5" y="50.5" width="10" height="10" rx="2" fill="#26a641" stroke="#2fc24d" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-03-09: Level 3</title></rect>
+    <rect x="429.0" y="50.5" width="10" height="10" rx="2" fill="#26a641" stroke="#2fc24d" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-03-16: Level 3</title></rect>
+    <rect x="441.5" y="50.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-03-23: Level 0</title></rect>
+    <rect x="454.0" y="50.5" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-03-30: Level 2</title></rect>
+    <rect x="466.5" y="50.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-04-06: Level 0</title></rect>
+    <rect x="479.0" y="50.5" width="10" height="10" rx="2" fill="#39d353" stroke="#4ff26a" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-04-13: Level 4</title></rect>
+    <rect x="491.5" y="50.5" width="10" height="10" rx="2" fill="#39d353" stroke="#4ff26a" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-04-20: Level 4</title></rect>
+    <rect x="504.0" y="50.5" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-04-27: Level 2</title></rect>
+    <rect x="516.5" y="50.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-05-04: Level 0</title></rect>
+    <rect x="529.0" y="50.5" width="10" height="10" rx="2" fill="#26a641" stroke="#2fc24d" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-05-11: Level 3</title></rect>
+    <rect x="541.5" y="50.5" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-05-18: Level 2</title></rect>
+    <rect x="554.0" y="50.5" width="10" height="10" rx="2" fill="#26a641" stroke="#2fc24d" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-05-25: Level 3</title></rect>
+    <rect x="566.5" y="50.5" width="10" height="10" rx="2" fill="#39d353" stroke="#4ff26a" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-06-01: Level 4</title></rect>
+    <rect x="579.0" y="50.5" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-06-08: Level 2</title></rect>
+    <rect x="591.5" y="50.5" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-06-15: Level 2</title></rect>
+    <rect x="604.0" y="50.5" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-06-22: Level 1</title></rect>
+    <rect x="616.5" y="50.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-06-29: Level 0</title></rect>
+    <rect x="629.0" y="50.5" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-07-06: Level 1</title></rect>
+    <rect x="641.5" y="50.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-07-13: Level 0</title></rect>
+    <rect x="654.0" y="50.5" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-07-20: Level 2</title></rect>
+    <rect x="666.5" y="50.5" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-07-27: Level 1</title></rect>
+    <rect x="679.0" y="50.5" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-08-03: Level 1</title></rect>
+    <rect x="691.5" y="50.5" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-08-10: Level 1</title></rect>
+    <rect x="704.0" y="50.5" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-08-17: Level 1</title></rect>
+    <rect x="716.5" y="50.5" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-08-24: Level 2</title></rect>
+    <rect x="729.0" y="50.5" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-08-31: Level 2</title></rect>
+    <rect x="741.5" y="50.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-09-07: Level 0</title></rect>
+    <rect x="104.0" y="63.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-09-16: Level 0</title></rect>
+    <rect x="116.5" y="63.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-09-23: Level 0</title></rect>
+    <rect x="129.0" y="63.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2025-09-30: Level 1</title></rect>
+    <rect x="141.5" y="63.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2025-10-07: Level 1</title></rect>
+    <rect x="154.0" y="63.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2025-10-14: Level 1</title></rect>
+    <rect x="166.5" y="63.0" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2025-10-21: Level 2</title></rect>
+    <rect x="179.0" y="63.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-10-28: Level 0</title></rect>
+    <rect x="191.5" y="63.0" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2025-11-04: Level 2</title></rect>
+    <rect x="204.0" y="63.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2025-11-11: Level 1</title></rect>
+    <rect x="216.5" y="63.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-11-18: Level 0</title></rect>
+    <rect x="229.0" y="63.0" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2025-11-25: Level 2</title></rect>
+    <rect x="241.5" y="63.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2025-12-02: Level 1</title></rect>
+    <rect x="254.0" y="63.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2025-12-09: Level 1</title></rect>
+    <rect x="266.5" y="63.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2025-12-16: Level 1</title></rect>
+    <rect x="279.0" y="63.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-12-23: Level 0</title></rect>
+    <rect x="291.5" y="63.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-12-30: Level 0</title></rect>
+    <rect x="304.0" y="63.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-01-06: Level 1</title></rect>
+    <rect x="316.5" y="63.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-01-13: Level 0</title></rect>
+    <rect x="329.0" y="63.0" width="10" height="10" rx="2" fill="#26a641" stroke="#2fc24d" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-01-20: Level 3</title></rect>
+    <rect x="341.5" y="63.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-01-27: Level 0</title></rect>
+    <rect x="354.0" y="63.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-02-03: Level 1</title></rect>
+    <rect x="366.5" y="63.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-02-10: Level 0</title></rect>
+    <rect x="379.0" y="63.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-02-17: Level 0</title></rect>
+    <rect x="391.5" y="63.0" width="10" height="10" rx="2" fill="#26a641" stroke="#2fc24d" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-02-24: Level 3</title></rect>
+    <rect x="404.0" y="63.0" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-03-03: Level 2</title></rect>
+    <rect x="416.5" y="63.0" width="10" height="10" rx="2" fill="#39d353" stroke="#4ff26a" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-03-10: Level 4</title></rect>
+    <rect x="429.0" y="63.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-03-17: Level 0</title></rect>
+    <rect x="441.5" y="63.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-03-24: Level 0</title></rect>
+    <rect x="454.0" y="63.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-03-31: Level 0</title></rect>
+    <rect x="466.5" y="63.0" width="10" height="10" rx="2" fill="#39d353" stroke="#4ff26a" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-04-07: Level 4</title></rect>
+    <rect x="479.0" y="63.0" width="10" height="10" rx="2" fill="#39d353" stroke="#4ff26a" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-04-14: Level 4</title></rect>
+    <rect x="491.5" y="63.0" width="10" height="10" rx="2" fill="#26a641" stroke="#2fc24d" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-04-21: Level 3</title></rect>
+    <rect x="504.0" y="63.0" width="10" height="10" rx="2" fill="#26a641" stroke="#2fc24d" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-04-28: Level 3</title></rect>
+    <rect x="516.5" y="63.0" width="10" height="10" rx="2" fill="#26a641" stroke="#2fc24d" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-05-05: Level 3</title></rect>
+    <rect x="529.0" y="63.0" width="10" height="10" rx="2" fill="#26a641" stroke="#2fc24d" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-05-12: Level 3</title></rect>
+    <rect x="541.5" y="63.0" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-05-19: Level 2</title></rect>
+    <rect x="554.0" y="63.0" width="10" height="10" rx="2" fill="#39d353" stroke="#4ff26a" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-05-26: Level 4</title></rect>
+    <rect x="566.5" y="63.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-06-02: Level 1</title></rect>
+    <rect x="579.0" y="63.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-06-09: Level 1</title></rect>
+    <rect x="591.5" y="63.0" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-06-16: Level 2</title></rect>
+    <rect x="604.0" y="63.0" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-06-23: Level 2</title></rect>
+    <rect x="616.5" y="63.0" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-06-30: Level 2</title></rect>
+    <rect x="629.0" y="63.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-07-07: Level 1</title></rect>
+    <rect x="641.5" y="63.0" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-07-14: Level 2</title></rect>
+    <rect x="654.0" y="63.0" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-07-21: Level 2</title></rect>
+    <rect x="666.5" y="63.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-07-28: Level 1</title></rect>
+    <rect x="679.0" y="63.0" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-08-04: Level 2</title></rect>
+    <rect x="691.5" y="63.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-08-11: Level 1</title></rect>
+    <rect x="704.0" y="63.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-08-18: Level 0</title></rect>
+    <rect x="716.5" y="63.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-08-25: Level 1</title></rect>
+    <rect x="729.0" y="63.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-09-01: Level 1</title></rect>
+    <rect x="741.5" y="63.0" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-09-08: Level 2</title></rect>
+    <rect x="104.0" y="75.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-09-17: Level 0</title></rect>
+    <rect x="116.5" y="75.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-09-24: Level 0</title></rect>
+    <rect x="129.0" y="75.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-10-01: Level 0</title></rect>
+    <rect x="141.5" y="75.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-10-08: Level 0</title></rect>
+    <rect x="154.0" y="75.5" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2025-10-15: Level 1</title></rect>
+    <rect x="166.5" y="75.5" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2025-10-22: Level 1</title></rect>
+    <rect x="179.0" y="75.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-10-29: Level 0</title></rect>
+    <rect x="191.5" y="75.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-11-05: Level 0</title></rect>
+    <rect x="204.0" y="75.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-11-12: Level 0</title></rect>
+    <rect x="216.5" y="75.5" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2025-11-19: Level 1</title></rect>
+    <rect x="229.0" y="75.5" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2025-11-26: Level 1</title></rect>
+    <rect x="241.5" y="75.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-12-03: Level 0</title></rect>
+    <rect x="254.0" y="75.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-12-10: Level 0</title></rect>
+    <rect x="266.5" y="75.5" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2025-12-17: Level 1</title></rect>
+    <rect x="279.0" y="75.5" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2025-12-24: Level 2</title></rect>
+    <rect x="291.5" y="75.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-12-31: Level 0</title></rect>
+    <rect x="304.0" y="75.5" width="10" height="10" rx="2" fill="#26a641" stroke="#2fc24d" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-01-07: Level 3</title></rect>
+    <rect x="316.5" y="75.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-01-14: Level 0</title></rect>
+    <rect x="329.0" y="75.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-01-21: Level 0</title></rect>
+    <rect x="341.5" y="75.5" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-01-28: Level 1</title></rect>
+    <rect x="354.0" y="75.5" width="10" height="10" rx="2" fill="#26a641" stroke="#2fc24d" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-02-04: Level 3</title></rect>
+    <rect x="366.5" y="75.5" width="10" height="10" rx="2" fill="#26a641" stroke="#2fc24d" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-02-11: Level 3</title></rect>
+    <rect x="379.0" y="75.5" width="10" height="10" rx="2" fill="#26a641" stroke="#2fc24d" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-02-18: Level 3</title></rect>
+    <rect x="391.5" y="75.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-02-25: Level 0</title></rect>
+    <rect x="404.0" y="75.5" width="10" height="10" rx="2" fill="#39d353" stroke="#4ff26a" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-03-04: Level 4</title></rect>
+    <rect x="416.5" y="75.5" width="10" height="10" rx="2" fill="#39d353" stroke="#4ff26a" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-03-11: Level 4</title></rect>
+    <rect x="429.0" y="75.5" width="10" height="10" rx="2" fill="#26a641" stroke="#2fc24d" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-03-18: Level 3</title></rect>
+    <rect x="441.5" y="75.5" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-03-25: Level 1</title></rect>
+    <rect x="454.0" y="75.5" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-04-01: Level 2</title></rect>
+    <rect x="466.5" y="75.5" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-04-08: Level 2</title></rect>
+    <rect x="479.0" y="75.5" width="10" height="10" rx="2" fill="#26a641" stroke="#2fc24d" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-04-15: Level 3</title></rect>
+    <rect x="491.5" y="75.5" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-04-22: Level 2</title></rect>
+    <rect x="504.0" y="75.5" width="10" height="10" rx="2" fill="#39d353" stroke="#4ff26a" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-04-29: Level 4</title></rect>
+    <rect x="516.5" y="75.5" width="10" height="10" rx="2" fill="#26a641" stroke="#2fc24d" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-05-06: Level 3</title></rect>
+    <rect x="529.0" y="75.5" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-05-13: Level 2</title></rect>
+    <rect x="541.5" y="75.5" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-05-20: Level 1</title></rect>
+    <rect x="554.0" y="75.5" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-05-27: Level 1</title></rect>
+    <rect x="566.5" y="75.5" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-06-03: Level 1</title></rect>
+    <rect x="579.0" y="75.5" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-06-10: Level 1</title></rect>
+    <rect x="591.5" y="75.5" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-06-17: Level 1</title></rect>
+    <rect x="604.0" y="75.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-06-24: Level 0</title></rect>
+    <rect x="616.5" y="75.5" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-07-01: Level 2</title></rect>
+    <rect x="629.0" y="75.5" width="10" height="10" rx="2" fill="#39d353" stroke="#4ff26a" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-07-08: Level 4</title></rect>
+    <rect x="641.5" y="75.5" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-07-15: Level 1</title></rect>
+    <rect x="654.0" y="75.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-07-22: Level 0</title></rect>
+    <rect x="666.5" y="75.5" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-07-29: Level 1</title></rect>
+    <rect x="679.0" y="75.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-08-05: Level 0</title></rect>
+    <rect x="691.5" y="75.5" width="10" height="10" rx="2" fill="#39d353" stroke="#4ff26a" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-08-12: Level 4</title></rect>
+    <rect x="704.0" y="75.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-08-19: Level 0</title></rect>
+    <rect x="716.5" y="75.5" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-08-26: Level 1</title></rect>
+    <rect x="729.0" y="75.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-09-02: Level 0</title></rect>
+    <rect x="741.5" y="75.5" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-09-09: Level 2</title></rect>
+    <rect x="104.0" y="88.0" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2025-09-18: Level 2</title></rect>
+    <rect x="116.5" y="88.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-09-25: Level 0</title></rect>
+    <rect x="129.0" y="88.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2025-10-02: Level 1</title></rect>
+    <rect x="141.5" y="88.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-10-09: Level 0</title></rect>
+    <rect x="154.0" y="88.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-10-16: Level 0</title></rect>
+    <rect x="166.5" y="88.0" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2025-10-23: Level 2</title></rect>
+    <rect x="179.0" y="88.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-10-30: Level 0</title></rect>
+    <rect x="191.5" y="88.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-11-06: Level 0</title></rect>
+    <rect x="204.0" y="88.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-11-13: Level 0</title></rect>
+    <rect x="216.5" y="88.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2025-11-20: Level 1</title></rect>
+    <rect x="229.0" y="88.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2025-11-27: Level 1</title></rect>
+    <rect x="241.5" y="88.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2025-12-04: Level 1</title></rect>
+    <rect x="254.0" y="88.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-12-11: Level 0</title></rect>
+    <rect x="266.5" y="88.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-12-18: Level 0</title></rect>
+    <rect x="279.0" y="88.0" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2025-12-25: Level 2</title></rect>
+    <rect x="291.5" y="88.0" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-01-01: Level 2</title></rect>
+    <rect x="304.0" y="88.0" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-01-08: Level 2</title></rect>
+    <rect x="316.5" y="88.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-01-15: Level 0</title></rect>
+    <rect x="329.0" y="88.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-01-22: Level 0</title></rect>
+    <rect x="341.5" y="88.0" width="10" height="10" rx="2" fill="#26a641" stroke="#2fc24d" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-01-29: Level 3</title></rect>
+    <rect x="354.0" y="88.0" width="10" height="10" rx="2" fill="#26a641" stroke="#2fc24d" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-02-05: Level 3</title></rect>
+    <rect x="366.5" y="88.0" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-02-12: Level 2</title></rect>
+    <rect x="379.0" y="88.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-02-19: Level 0</title></rect>
+    <rect x="391.5" y="88.0" width="10" height="10" rx="2" fill="#26a641" stroke="#2fc24d" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-02-26: Level 3</title></rect>
+    <rect x="404.0" y="88.0" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-03-05: Level 2</title></rect>
+    <rect x="416.5" y="88.0" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-03-12: Level 2</title></rect>
+    <rect x="429.0" y="88.0" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-03-19: Level 2</title></rect>
+    <rect x="441.5" y="88.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-03-26: Level 0</title></rect>
+    <rect x="454.0" y="88.0" width="10" height="10" rx="2" fill="#26a641" stroke="#2fc24d" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-04-02: Level 3</title></rect>
+    <rect x="466.5" y="88.0" width="10" height="10" rx="2" fill="#39d353" stroke="#4ff26a" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-04-09: Level 4</title></rect>
+    <rect x="479.0" y="88.0" width="10" height="10" rx="2" fill="#39d353" stroke="#4ff26a" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-04-16: Level 4</title></rect>
+    <rect x="491.5" y="88.0" width="10" height="10" rx="2" fill="#26a641" stroke="#2fc24d" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-04-23: Level 3</title></rect>
+    <rect x="504.0" y="88.0" width="10" height="10" rx="2" fill="#26a641" stroke="#2fc24d" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-04-30: Level 3</title></rect>
+    <rect x="516.5" y="88.0" width="10" height="10" rx="2" fill="#26a641" stroke="#2fc24d" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-05-07: Level 3</title></rect>
+    <rect x="529.0" y="88.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-05-14: Level 1</title></rect>
+    <rect x="541.5" y="88.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-05-21: Level 1</title></rect>
+    <rect x="554.0" y="88.0" width="10" height="10" rx="2" fill="#26a641" stroke="#2fc24d" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-05-28: Level 3</title></rect>
+    <rect x="566.5" y="88.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-06-04: Level 1</title></rect>
+    <rect x="579.0" y="88.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-06-11: Level 0</title></rect>
+    <rect x="591.5" y="88.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-06-18: Level 1</title></rect>
+    <rect x="604.0" y="88.0" width="10" height="10" rx="2" fill="#39d353" stroke="#4ff26a" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-06-25: Level 4</title></rect>
+    <rect x="616.5" y="88.0" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-07-02: Level 2</title></rect>
+    <rect x="629.0" y="88.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-07-09: Level 0</title></rect>
+    <rect x="641.5" y="88.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-07-16: Level 1</title></rect>
+    <rect x="654.0" y="88.0" width="10" height="10" rx="2" fill="#39d353" stroke="#4ff26a" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-07-23: Level 4</title></rect>
+    <rect x="666.5" y="88.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-07-30: Level 1</title></rect>
+    <rect x="679.0" y="88.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-08-06: Level 0</title></rect>
+    <rect x="691.5" y="88.0" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-08-13: Level 2</title></rect>
+    <rect x="704.0" y="88.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-08-20: Level 0</title></rect>
+    <rect x="716.5" y="88.0" width="10" height="10" rx="2" fill="#39d353" stroke="#4ff26a" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-08-27: Level 4</title></rect>
+    <rect x="729.0" y="88.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-09-03: Level 0</title></rect>
+    <rect x="741.5" y="88.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-09-10: Level 0</title></rect>
+    <rect x="104.0" y="100.5" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2025-09-19: Level 1</title></rect>
+    <rect x="116.5" y="100.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-09-26: Level 0</title></rect>
+    <rect x="129.0" y="100.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-10-03: Level 0</title></rect>
+    <rect x="141.5" y="100.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-10-10: Level 0</title></rect>
+    <rect x="154.0" y="100.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-10-17: Level 0</title></rect>
+    <rect x="166.5" y="100.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-10-24: Level 0</title></rect>
+    <rect x="179.0" y="100.5" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2025-10-31: Level 1</title></rect>
+    <rect x="191.5" y="100.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-11-07: Level 0</title></rect>
+    <rect x="204.0" y="100.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-11-14: Level 0</title></rect>
+    <rect x="216.5" y="100.5" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2025-11-21: Level 1</title></rect>
+    <rect x="229.0" y="100.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-11-28: Level 0</title></rect>
+    <rect x="241.5" y="100.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-12-05: Level 0</title></rect>
+    <rect x="254.0" y="100.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-12-12: Level 0</title></rect>
+    <rect x="266.5" y="100.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-12-19: Level 0</title></rect>
+    <rect x="279.0" y="100.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-12-26: Level 0</title></rect>
+    <rect x="291.5" y="100.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-01-02: Level 0</title></rect>
+    <rect x="304.0" y="100.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-01-09: Level 0</title></rect>
+    <rect x="316.5" y="100.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-01-16: Level 0</title></rect>
+    <rect x="329.0" y="100.5" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-01-23: Level 1</title></rect>
+    <rect x="341.5" y="100.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-01-30: Level 0</title></rect>
+    <rect x="354.0" y="100.5" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-02-06: Level 2</title></rect>
+    <rect x="366.5" y="100.5" width="10" height="10" rx="2" fill="#26a641" stroke="#2fc24d" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-02-13: Level 3</title></rect>
+    <rect x="379.0" y="100.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-02-20: Level 0</title></rect>
+    <rect x="391.5" y="100.5" width="10" height="10" rx="2" fill="#26a641" stroke="#2fc24d" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-02-27: Level 3</title></rect>
+    <rect x="404.0" y="100.5" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-03-06: Level 2</title></rect>
+    <rect x="416.5" y="100.5" width="10" height="10" rx="2" fill="#39d353" stroke="#4ff26a" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-03-13: Level 4</title></rect>
+    <rect x="429.0" y="100.5" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-03-20: Level 2</title></rect>
+    <rect x="441.5" y="100.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-03-27: Level 0</title></rect>
+    <rect x="454.0" y="100.5" width="10" height="10" rx="2" fill="#26a641" stroke="#2fc24d" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-04-03: Level 3</title></rect>
+    <rect x="466.5" y="100.5" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-04-10: Level 2</title></rect>
+    <rect x="479.0" y="100.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-04-17: Level 0</title></rect>
+    <rect x="491.5" y="100.5" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-04-24: Level 2</title></rect>
+    <rect x="504.0" y="100.5" width="10" height="10" rx="2" fill="#26a641" stroke="#2fc24d" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-05-01: Level 3</title></rect>
+    <rect x="516.5" y="100.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-05-08: Level 0</title></rect>
+    <rect x="529.0" y="100.5" width="10" height="10" rx="2" fill="#26a641" stroke="#2fc24d" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-05-15: Level 3</title></rect>
+    <rect x="541.5" y="100.5" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-05-22: Level 2</title></rect>
+    <rect x="554.0" y="100.5" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-05-29: Level 1</title></rect>
+    <rect x="566.5" y="100.5" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-06-05: Level 2</title></rect>
+    <rect x="579.0" y="100.5" width="10" height="10" rx="2" fill="#39d353" stroke="#4ff26a" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-06-12: Level 4</title></rect>
+    <rect x="591.5" y="100.5" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-06-19: Level 2</title></rect>
+    <rect x="604.0" y="100.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-06-26: Level 0</title></rect>
+    <rect x="616.5" y="100.5" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-07-03: Level 2</title></rect>
+    <rect x="629.0" y="100.5" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-07-10: Level 2</title></rect>
+    <rect x="641.5" y="100.5" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-07-17: Level 1</title></rect>
+    <rect x="654.0" y="100.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-07-24: Level 0</title></rect>
+    <rect x="666.5" y="100.5" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-07-31: Level 2</title></rect>
+    <rect x="679.0" y="100.5" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-08-07: Level 1</title></rect>
+    <rect x="691.5" y="100.5" width="10" height="10" rx="2" fill="#39d353" stroke="#4ff26a" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-08-14: Level 4</title></rect>
+    <rect x="704.0" y="100.5" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-08-21: Level 0</title></rect>
+    <rect x="716.5" y="100.5" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-08-28: Level 2</title></rect>
+    <rect x="729.0" y="100.5" width="10" height="10" rx="2" fill="#39d353" stroke="#4ff26a" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-09-04: Level 4</title></rect>
+    <rect x="741.5" y="100.5" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-09-11: Level 2</title></rect>
+    <rect x="104.0" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-09-20: Level 0</title></rect>
+    <rect x="116.5" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-09-27: Level 0</title></rect>
+    <rect x="129.0" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-10-04: Level 0</title></rect>
+    <rect x="141.5" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-10-11: Level 0</title></rect>
+    <rect x="154.0" y="113.0" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2025-10-18: Level 2</title></rect>
+    <rect x="166.5" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-10-25: Level 0</title></rect>
+    <rect x="179.0" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-11-01: Level 0</title></rect>
+    <rect x="191.5" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-11-08: Level 0</title></rect>
+    <rect x="204.0" y="113.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2025-11-15: Level 1</title></rect>
+    <rect x="216.5" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-11-22: Level 0</title></rect>
+    <rect x="229.0" y="113.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2025-11-29: Level 1</title></rect>
+    <rect x="241.5" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-12-06: Level 0</title></rect>
+    <rect x="254.0" y="113.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2025-12-13: Level 1</title></rect>
+    <rect x="266.5" y="113.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2025-12-20: Level 1</title></rect>
+    <rect x="279.0" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2025-12-27: Level 0</title></rect>
+    <rect x="291.5" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-01-03: Level 0</title></rect>
+    <rect x="304.0" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-01-10: Level 0</title></rect>
+    <rect x="316.5" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-01-17: Level 0</title></rect>
+    <rect x="329.0" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-01-24: Level 0</title></rect>
+    <rect x="341.5" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-01-31: Level 0</title></rect>
+    <rect x="354.0" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-02-07: Level 0</title></rect>
+    <rect x="366.5" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-02-14: Level 0</title></rect>
+    <rect x="379.0" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-02-21: Level 0</title></rect>
+    <rect x="391.5" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-02-28: Level 0</title></rect>
+    <rect x="404.0" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-03-07: Level 0</title></rect>
+    <rect x="416.5" y="113.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-03-14: Level 1</title></rect>
+    <rect x="429.0" y="113.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-03-21: Level 1</title></rect>
+    <rect x="441.5" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-03-28: Level 0</title></rect>
+    <rect x="454.0" y="113.0" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-04-04: Level 2</title></rect>
+    <rect x="466.5" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-04-11: Level 0</title></rect>
+    <rect x="479.0" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-04-18: Level 0</title></rect>
+    <rect x="491.5" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-04-25: Level 0</title></rect>
+    <rect x="504.0" y="113.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-05-02: Level 1</title></rect>
+    <rect x="516.5" y="113.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-05-09: Level 1</title></rect>
+    <rect x="529.0" y="113.0" width="10" height="10" rx="2" fill="#006d32" stroke="#008c40" stroke-width="0.5" ><title>2026-05-16: Level 2</title></rect>
+    <rect x="541.5" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-05-23: Level 0</title></rect>
+    <rect x="554.0" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-05-30: Level 0</title></rect>
+    <rect x="566.5" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-06-06: Level 0</title></rect>
+    <rect x="579.0" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-06-13: Level 0</title></rect>
+    <rect x="591.5" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-06-20: Level 0</title></rect>
+    <rect x="604.0" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-06-27: Level 0</title></rect>
+    <rect x="616.5" y="113.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-07-04: Level 1</title></rect>
+    <rect x="629.0" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-07-11: Level 0</title></rect>
+    <rect x="641.5" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-07-18: Level 0</title></rect>
+    <rect x="654.0" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-07-25: Level 0</title></rect>
+    <rect x="666.5" y="113.0" width="10" height="10" rx="2" fill="#0e4429" stroke="#145c37" stroke-width="0.5" ><title>2026-08-01: Level 1</title></rect>
+    <rect x="679.0" y="113.0" width="10" height="10" rx="2" fill="#26a641" stroke="#2fc24d" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-08-08: Level 3</title></rect>
+    <rect x="691.5" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-08-15: Level 0</title></rect>
+    <rect x="704.0" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-08-22: Level 0</title></rect>
+    <rect x="716.5" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-08-29: Level 0</title></rect>
+    <rect x="729.0" y="113.0" width="10" height="10" rx="2" fill="#141d2e" stroke="#1c283d" stroke-width="0.7" ><title>2026-09-05: Level 0</title></rect>
+    <rect x="741.5" y="113.0" width="10" height="10" rx="2" fill="#39d353" stroke="#4ff26a" stroke-width="0.5" filter="url(#cellGlow)"><title>2026-09-12: Level 4</title></rect>
+  </g>
+
+  <!-- Footer Metadata & Legend -->
+  <g transform="translate(32, 137)">
+    <circle cx="4" cy="-3.5" r="3" fill="#39d353" opacity="0.85" />
+    <text x="14" y="0" class="meta-text">
+      <tspan fill="#38bdf8" font-weight="600">197 active days</tspan> in the last year &#160;•&#160; Building consistently, one commit at a time
+    </text>
+  </g>
+
+  <g transform="translate(714, 129)">
+    <text x="-6" y="8" text-anchor="end" class="legend-text">Less</text>
+    <rect x="0" y="0" width="9" height="9" rx="1.5" fill="#141d2e" stroke="#1c283d" stroke-width="0.6" />
+    <rect x="13" y="0" width="9" height="9" rx="1.5" fill="#0e4429" stroke="#145c37" stroke-width="0.5" />
+    <rect x="26" y="0" width="9" height="9" rx="1.5" fill="#006d32" stroke="#008c40" stroke-width="0.5" />
+    <rect x="39" y="0" width="9" height="9" rx="1.5" fill="#26a641" stroke="#2fc24d" stroke-width="0.5" />
+    <rect x="52" y="0" width="9" height="9" rx="1.5" fill="#39d353" stroke="#4ff26a" stroke-width="0.5" />
+    <text x="69" y="8" class="legend-text">More</text>
+  </g>
+</svg>

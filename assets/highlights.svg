@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1150 96" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0c1427" />
+      <stop offset="100%" stop-color="#070c18" />
+    </linearGradient>
+
+    <!-- Subtle Glow for Active Cards -->
+    <filter id="amberGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#f59e0b" flood-opacity="0.18" />
+    </filter>
+    <filter id="cyanGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#38bdf8" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <style>
+    .card-base { fill: url(#cardGrad); stroke: #1e293b; stroke-width: 1.2; rx: 10px; }
+    .val-main { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13.5px; font-weight: 700; fill: #f8fafc; text-anchor: middle; }
+    .val-large { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 15px; font-weight: 800; text-anchor: middle; }
+    .sub-label { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 11.5px; font-weight: 600; text-anchor: middle; }
+  </style>
+
+  <!-- CARD 1: LeetCode Knight -->
+  <g transform="translate(10, 5)">
+    <rect width="214" height="86" class="card-base" />
+    <!-- Trophy Icon -->
+    <g transform="translate(97, 12)">
+      <path d="M4 3h12v4c0 3.31-2.69 6-6 6s-6-2.69-6-6V3zm-2 2H0v2c0 2.21 1.79 4 4 4v-2c-1.1 0-2-.9-2-2V5zm16 0v2c0 1.1-.9 2-2 2v2c2.21 0 4-1.79 4-4V5h-2zm-9 9h2v4H9v-4zm-4 4h10v2H5v-2z" fill="#f59e0b" />
+    </g>
+    <text x="107" y="52" class="val-main">LeetCode Knight</text>
+    <text x="107" y="70" class="sub-label" fill="#f59e0b">1874 Rating</text>
+  </g>
+
+  <!-- CARD 2: 750+ DSA -->
+  <g transform="translate(238, 5)">
+    <rect width="214" height="86" class="card-base" />
+    <!-- Code Bracket Icon -->
+    <g transform="translate(97, 12)">
+      <path d="M7 6L2 11l5 5 1.5-1.5L5 11l3.5-3.5L7 6zm6 0l-1.5 1.5L15 11l-3.5 3.5L13 16l5-5-5-5z" fill="#38bdf8" />
+    </g>
+    <text x="107" y="52" class="val-large" fill="#38bdf8">750+</text>
+    <text x="107" y="70" class="sub-label" fill="#94a3b8">DSA Problems</text>
+  </g>
+
+  <!-- CARD 3: Google Big Code -->
+  <g transform="translate(466, 5)">
+    <rect width="214" height="86" class="card-base" />
+    <!-- Google G Icon -->
+    <g transform="translate(97, 12)">
+      <path d="M19.6 10.23c0-.82-.07-1.42-.25-2.05H10v3.72h5.5c-.15.96-.74 2.31-2.04 3.22v2.45h3.16c1.89-1.73 2.98-4.3 2.98-7.34z" fill="#4285F4" />
+      <path d="M10 20c2.7 0 4.98-.89 6.64-2.43l-3.16-2.45c-.87.6-2.01 1-3.48 1-2.7 0-4.99-1.8-5.81-4.28H.9v2.53C2.58 17.65 6.02 20 10 20z" fill="#34A853" />
+      <path d="M4.19 11.84c-.21-.62-.33-1.28-.33-1.84s.12-1.22.32-1.84V5.63H.9A9.99 9.99 0 000 10c0 1.61.39 3.14 1.07 4.51l3.12-2.67z" fill="#FBBC05" />
+      <path d="M10 3.88c1.88 0 3.13.81 3.85 1.48l2.84-2.76C14.96.99 12.7 0 10 0 6.02 0 2.58 2.35.9 5.63l3.29 2.53C5.01 5.68 7.3 3.88 10 3.88z" fill="#EA4335" />
+    </g>
+    <text x="107" y="52" class="val-main">Google Big Code</text>
+    <text x="107" y="70" class="sub-label" fill="#94a3b8">Top 1,500 (2024)</text>
+  </g>
+
+  <!-- CARD 4: 3x G.P. Birla Scholar -->
+  <g transform="translate(694, 5)">
+    <rect width="214" height="86" class="card-base" />
+    <!-- Graduation Cap Icon -->
+    <g transform="translate(97, 12)">
+      <path d="M10 2L0 7l10 5 8-4v6h2V7L10 2zM3 11.5v4.3c0 2.6 3.1 4.7 7 4.7s7-2.1 7-4.7v-4.3l-7 3.5-7-3.5z" fill="#a855f7" />
+    </g>
+    <text x="107" y="52" class="val-main">
+      <tspan fill="#c084fc">3×</tspan> G.P. Birla Scholar
+    </text>
+    <text x="107" y="70" class="sub-label" fill="#c084fc">Academic Excellence</text>
+  </g>
+
+  <!-- CARD 5: 8.54 CGPA -->
+  <g transform="translate(922, 5)">
+    <rect width="214" height="86" class="card-base" />
+    <!-- Bar Chart Trend Icon -->
+    <g transform="translate(97, 12)">
+      <path d="M3 13h2v-4H3v4zm4 0h2V7H7v6zm4 0h2V4h-2v9zm4 0h2V9h-2v4zm-14 3h18v2H1v-2z" fill="#10b981" />
+    </g>
+    <text x="107" y="52" class="val-large" fill="#10b981">8.54 CGPA</text>
+    <text x="107" y="70" class="sub-label" fill="#94a3b8">BIT Mesra</text>
+  </g>
+</svg>

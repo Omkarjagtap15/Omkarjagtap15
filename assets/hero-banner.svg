@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+  <defs>
+    <!-- Sky Background Gradient -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040711" />
+      <stop offset="40%" stop-color="#081026" />
+      <stop offset="75%" stop-color="#0b1736" />
+      <stop offset="100%" stop-color="#070c1a" />
+    </linearGradient>
+
+    <!-- Moon Glow Filter & Gradient -->
+    <radialGradient id="moonAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.45" />
+      <stop offset="35%" stop-color="#1e3a8a" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#081026" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="moonBody" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="70%" stop-color="#e0f2fe" />
+      <stop offset="100%" stop-color="#bae6fd" />
+    </radialGradient>
+
+    <!-- Mountain Gradients -->
+    <linearGradient id="mountainsBack" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#152449" />
+      <stop offset="100%" stop-color="#0a1226" />
+    </linearGradient>
+
+    <linearGradient id="mountainsMid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#111c38" />
+      <stop offset="100%" stop-color="#080e1e" />
+    </linearGradient>
+
+    <linearGradient id="mountainsFront" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329" />
+      <stop offset="100%" stop-color="#040710" />
+    </linearGradient>
+
+    <!-- Ridge Glow Filter -->
+    <linearGradient id="ridgeGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.2" />
+      <stop offset="50%" stop-color="#60a5fa" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.2" />
+    </linearGradient>
+
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .mono-accent { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "JetBrains Mono", monospace; font-size: 10px; font-weight: 700; fill: #64748b; letter-spacing: 3px; }
+    .hero-title-white { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 46px; font-weight: 800; fill: #ffffff; letter-spacing: 5px; }
+    .hero-title-cyan { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 46px; font-weight: 800; fill: #38bdf8; letter-spacing: 5px; }
+    .hero-sub { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 12px; font-weight: 600; fill: #94a3b8; letter-spacing: 3px; }
+    .script-quote { font-family: "Segoe Script", "Brush Script MT", "Caveat", "Dancing Script", cursive, sans-serif; font-size: 19px; fill: #7dd3fc; font-style: italic; opacity: 0.9; }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1200" height="320" rx="14" fill="url(#skyGrad)" />
+  <rect width="1200" height="320" rx="14" fill="none" stroke="#1e293b" stroke-width="1.5" />
+
+  <!-- Moon Glow & Moon Body -->
+  <circle cx="940" cy="88" r="70" fill="url(#moonAura)" />
+  <circle cx="940" cy="88" r="19" fill="url(#moonBody)" filter="url(#subtleGlow)" />
+  <ellipse cx="936" cy="85" r="16" fill="#f8fafc" />
+
+  <!-- Stars (Precision Placed) -->
+  <g fill="#ffffff">
+    <circle cx="95" cy="45" r="1.2" opacity="0.65" />
+    <circle cx="160" cy="75" r="0.8" opacity="0.4" />
+    <circle cx="210" cy="35" r="1.4" opacity="0.8" />
+    <circle cx="270" cy="90" r="0.9" opacity="0.5" />
+    <circle cx="340" cy="40" r="1.1" opacity="0.6" />
+    <circle cx="420" cy="65" r="0.8" opacity="0.35" />
+    <circle cx="480" cy="25" r="1.5" opacity="0.85" />
+    <circle cx="530" cy="80" r="0.9" opacity="0.45" />
+    <circle cx="610" cy="30" r="1.2" opacity="0.75" />
+    <circle cx="670" cy="70" r="0.7" opacity="0.3" />
+    <circle cx="730" cy="45" r="1.3" opacity="0.8" />
+    <circle cx="790" cy="95" r="0.8" opacity="0.4" />
+    <circle cx="840" cy="35" r="1.5" opacity="0.85" />
+    <circle cx="890" cy="65" r="1.0" opacity="0.5" />
+    <circle cx="1010" cy="40" r="1.2" opacity="0.65" />
+    <circle cx="1060" cy="75" r="0.8" opacity="0.45" />
+    <circle cx="1120" cy="30" r="1.4" opacity="0.75" />
+    <circle cx="1165" cy="85" r="0.9" opacity="0.5" />
+    <circle cx="380" cy="110" r="0.7" opacity="0.3" />
+    <circle cx="580" cy="115" r="0.9" opacity="0.4" />
+    <circle cx="710" cy="120" r="0.8" opacity="0.35" />
+    <circle cx="870" cy="115" r="1.1" opacity="0.55" />
+  </g>
+
+  <!-- Distant Background Mountain Ridge -->
+  <path d="M0,230 
+           L60,205 L130,220 L210,185 L280,210 L370,175 L450,215 L540,165 
+           L620,195 L710,160 L800,205 L880,155 L960,190 L1040,165 L1130,200 L1200,175 
+           L1200,320 L0,320 Z" 
+        fill="url(#mountainsBack)" opacity="0.85" />
+
+  <!-- Midground Mountains with Layered Ridges -->
+  <path d="M0,255 
+           L50,240 L110,210 L180,235 L260,195 L330,225 L410,185 L490,225 
+           L580,180 L660,215 L740,180 L830,220 L910,175 L990,210 L1080,180 L1150,215 L1200,195 
+           L1200,320 L0,320 Z" 
+        fill="url(#mountainsMid)" />
+
+  <!-- Mountain Ridge Highlight Glow -->
+  <path d="M180,235 L260,195 L330,225 M410,185 L490,225 M580,180 L660,215 M740,180 L830,220 M910,175 L990,210" 
+        stroke="url(#ridgeGlow)" stroke-width="1.5" fill="none" opacity="0.7" />
+
+  <!-- Foreground Dark Mountain Peaks -->
+  <path d="M0,280 
+           L80,250 L160,275 L240,240 L340,285 L450,235 L530,265 L610,230 
+           L700,265 L790,225 L880,265 L970,230 L1060,270 L1140,245 L1200,265 
+           L1200,320 L0,320 Z" 
+        fill="url(#mountainsFront)" />
+
+  <!-- Bottom Dark Fade for Smooth Content Blending -->
+  <rect y="295" width="1200" height="25" fill="#040710" opacity="0.9" />
+
+  <!-- Left Header: BUILD LEARN SOLVE REPEAT -->
+  <g transform="translate(65, 45)">
+    <text x="0" y="0" class="mono-accent">BUILD</text>
+    <text x="0" y="15" class="mono-accent">LEARN</text>
+    <text x="0" y="30" class="mono-accent">SOLVE</text>
+    <text x="0" y="45" class="mono-accent">REPEAT</text>
+    <line x1="0" y1="55" x2="48" y2="55" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- Right Script Quote: Better Software, A Brighter Tomorrow -->
+  <g transform="translate(1135, 52)">
+    <text x="0" y="0" text-anchor="end" class="script-quote">Better Software,</text>
+    <text x="0" y="24" text-anchor="end" class="script-quote">A Brighter Tomorrow</text>
+  </g>
+
+  <!-- Center Identity: OMKAR JAGTAP -->
+  <g transform="translate(600, 160)">
+    <!-- Main Name -->
+    <text text-anchor="middle" y="0">
+      <tspan class="hero-title-white">OMKAR </tspan>
+      <tspan class="hero-title-cyan">JAGTAP</tspan>
+    </text>
+
+    <!-- Subtitle: Full-Stack Engineer • Backend • AI/ML • Distributed Systems -->
+    <text text-anchor="middle" y="32" class="hero-sub">
+      FULL-STACK ENGINEER  •  BACKEND  •  AI/ML  •  DISTRIBUTED SYSTEMS
+    </text>
+  </g>
+</svg>
