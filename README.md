@@ -105,12 +105,6 @@ Full-Stack Engineer building scalable backend systems, AI-powered products, and 
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 
-#### 🧠 Core (CS Fundamentals)
-![Data Structures & Algorithms](https://img.shields.io/badge/Data_Structures_&_Algorithms-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)
-![OOP](https://img.shields.io/badge/OOP-Object_Oriented_Design-0284C7?style=for-the-badge)
-![Operating Systems](https://img.shields.io/badge/Operating_Systems-Linux_&_POSIX-059669?style=for-the-badge&logo=linux&logoColor=white)
-![DBMS](https://img.shields.io/badge/DBMS-Database_Management-D97706?style=for-the-badge&logo=postgresql&logoColor=white)
-![Computer Networks](https://img.shields.io/badge/Computer_Networks-TCP%2FIP_&_HTTP-7C3AED?style=for-the-badge)
 
 ---
 
