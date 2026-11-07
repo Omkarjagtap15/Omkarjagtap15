@@ -21,15 +21,15 @@
     .sub-label { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 11.5px; font-weight: 600; text-anchor: middle; }
   </style>
 
-  <!-- CARD 1: LeetCode Knight -->
+  <!-- CARD 1: LeetCode Guardian -->
   <g transform="translate(10, 5)">
     <rect width="214" height="86" class="card-base" />
     <!-- Trophy Icon -->
     <g transform="translate(97, 12)">
       <path d="M4 3h12v4c0 3.31-2.69 6-6 6s-6-2.69-6-6V3zm-2 2H0v2c0 2.21 1.79 4 4 4v-2c-1.1 0-2-.9-2-2V5zm16 0v2c0 1.1-.9 2-2 2v2c2.21 0 4-1.79 4-4V5h-2zm-9 9h2v4H9v-4zm-4 4h10v2H5v-2z" fill="#f59e0b" />
     </g>
-    <text x="107" y="52" class="val-main">LeetCode Knight</text>
-    <text x="107" y="70" class="sub-label" fill="#f59e0b">1874 Rating</text>
+    <text x="107" y="52" class="val-main">LeetCode Guardian</text>
+    <text x="107" y="70" class="sub-label" fill="#f59e0b">2165 Rating</text>
   </g>
 
   <!-- CARD 2: 750+ DSA -->
